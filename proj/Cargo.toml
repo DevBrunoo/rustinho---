@@ -1,0 +1,10 @@
+[package]
+name = "proj"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies] # Quando nos comecar a depender de framework e dependencias colocamos la. 
+
+# You think this arquiv how JSON 
