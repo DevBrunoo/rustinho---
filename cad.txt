@@ -1,0 +1,15 @@
+Rust e uma otima lingugaem aonde voce consegue criar aplicacao de todos os niveis, e extender ela a outras linguagens.
+
+Para projetos maiores, e quando estamos trabalhando com dependecias, nos pode usar cargo uma ferramenta do rustc
+Essa ferramenta sera um gestor de projetos um gestor de ferramentas e uma ferramenta para executar tarefas. 
+Sempre quando criamos um novo projeto com cargo chamamos de Rust workspace. Quando quisermos copilar o projeto chamamos de cargo build "cargo new ___ (e para criar o workspace)"
+se no terminal eu dar um cargo fmt ele ira corrigir a formatacao do codigo "Deixar a sintaxe bonita".
+
+
+"Rust e dificil e tem uma curva de aprendizado muito grande, porque escrever codigo correto com segurança de memoria não e facil e nunca foi facil "
+
+Para gatantir que vamos escrever o codigo correto existe a ferramenta borow checker, essa ferramenta vai ficar tentando fazer nos não copilar o nosso codigo
+pois o codigo mais seguro e o que não copila. 
+Ele fica tipo aquele cara chato noia falando isso voce nao pode fazer porque vai dar ruim com memory leak, dangling pointers entre outros...
+
+A parte boa e que se voce sabe ler os log "msg" de erro e facil de entender e aprender com ele. Essa ferramenta funciona no nivel de função 
