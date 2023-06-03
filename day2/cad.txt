@@ -1,0 +1,34 @@
+Definicao de variaveis e essa parte
+
+Agente não pode utilizar let para definir variaveis no escopo principal
+
+Existe uma abordagem chamada de barba de collector que de tempos e tempos roda um runtime na lingugaem 
+e fica olhando para o estado da memoria se tiver variaveis que nao tem mais referencias ou seja nao estao sendo utilizadas, o 
+barba de colector vai la e limpa a memoria, o rust nao segue essa abordagem porque ela precisa ser rapida. 
+
+Rust usa uma abordagem chamade de Aquisição de Recurso é Inicialização 
+
+"Aquisição de Recurso é Inicialização é um padrão de projeto de software para C++, D e Rust que combina a aquisição e liberação de recursos com inicialização e destruição de objeto""
+
+Se quiser criar uma variavel que sera "inutil" so coloca o _ na frente, assima variavel fica: _hoje = 30; 
+
+Em varios conceitos utilizamos o underline quando queremos ignorar algo no rust. 
+rust e uma linguagem estaticamente dipada ou seja ela precisa ser o tipo da variavel, porem com o contexto da variavel  ou da sintaxe ele e capaz de advinhar o tipo dessa variavel
+
+Toda variavel por padrao no rust e imutavel, ou sej ase nos definir ela como 12 nao podemos depois definir para outro valor. 
+se nos colocar um mut na frente ela fica mutavel
+
+Mas lembre que a imutalidade deixa o codigo mais seguro
+
+Rust e uma lingugaem que nao tem correção aultomatica de tipos o que significa que a tipagem e forte
+A gestão de memoria do Rust funciona baseada em Lifetime a partir do escopo 
+
+As contantes definidas seguem o estilo screaming e snake case qou seja vamos definir apenas com letras maiusculas e separar por underlines, um exemplo SECONDS_IN_MINUTE
+para definir constante devemos tambem obrigatoriamente definir o seu tipo.
+constantes sao imutaveis e nao podem ser definidas duas vezes. 
+
+O rust nao precisa fazer a gestao da memoria, porque elas so podem receber valores que copilam durante o processo 
+O valor da constante nao necessariamente precisa ser um numero fixo ele pode ser uma operacao matematica desde que o copilador consiga saber disso durante a copilacao 
+
+Constante e um artificio que nos usa para abstrair o nosso codigo para o codigo ficar mais legivel mas no fim ela tem custo zero de abstracao no resultado final da copilacao o rust iria utilizar so 
+o resultado mais explicito possivel para que ele fique mais rapido
